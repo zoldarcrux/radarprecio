@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
-
 app = FastAPI()
 
-@app.get("/api/sse")
-async def sse():
+@app.get("/")
+def sse():
     return PlainTextResponse("RadarPrecio MCP placeholder activo")
